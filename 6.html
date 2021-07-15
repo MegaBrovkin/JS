@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<script>
+    let x = +prompt('Введите X');
+    let y = +prompt('Введите Y');
+    let operation = prompt('Введите операцию: + - * /')
+
+    switch (operation) {
+        case '+':
+            function addition(x, y) {
+                return (x + y);
+            }
+            additionResult = addition(x, y);
+            alert(additionResult);
+            break;
+
+        case '-':
+            function subtraction(x, y) {
+                return (x - y);
+            }
+            subtractionResult = subtraction(x, y);
+            alert(subtractionResult);
+            break;
+
+        case '*':
+            function multiplication(x, y) {
+                return (x * y);
+            }
+            multiplicationResult = multiplication(x, y);
+            alert(multiplicationResult);
+            break;
+
+        case '/':
+            function division(x, y) {
+                return (x / y);
+            }
+            divisionResult = division(x, y);
+            alert(divisionResult);
+            break;
+
+    }
+
+</script>

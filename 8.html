@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+
+    function power(val, pow) {
+        let result = val;
+        for (let i = 1; i < pow; i++) {
+            result *= val;
+        }
+        return result;
+    }
+    let val = +prompt('Введите число');
+    let pow = +prompt('Введите степень');
+    alert(power(val, pow));
+</script>
