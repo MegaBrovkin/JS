@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    let total = [];
+    let basket = [
+        ['audi', 300, 2],
+        ['man', 500, 2],
+        ['bmw', 600, 1],
+        ['opel', 200, 3]
+    ];
+
+    function score() {
+        for (let i = 0; i < basket.length; i++) {
+            let productTotal = basket[0][1] * basket[0][2];
+            total.push(productTotal);
+        }
+    }
+    function sum() {
+        let sum = 0;
+        for (let i = 0; i < basket.length; i++) {
+            sum += basket[i][1] * basket[i][2];
+        }
+        return sum
+    }
+    alert(sum(total));
+
+</script>
