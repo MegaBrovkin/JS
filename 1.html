@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    function isPrime(num) { /* не понятно - почему num изначально равно 2 (т.е. i?) 
+        и почему потом то возрастает до 100, то равняется проверяемому числу? 
+        Т.е. откуда берется 100 - понятно -из 24 строки, но какая команда его меняет? */
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return num > 1; // не понятно - почему без этой строчки не работает?
+    }
+
+    function getPrimes(num) {
+        const primes = [];
+
+        for (i = 2; i < num; i++) {
+            if (isPrime(i)) {
+                primes.push(i);
+            }
+        }
+        return primes;
+    }
+
+    alert(getPrimes(100));
+
+</script>
