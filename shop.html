@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<script>
+
+    function total(a) {
+        a.total = (a.cost * a.quantity)
+        totalPrise.push(a.total);
+    };
+
+    let totalPrise = [];
+
+    let audi = {
+        make: "Audi",
+        cost: 300,
+        quantity: 2,
+    };
+    total(audi);
+
+    let man = {
+        make: "MAN",
+        cost: 500,
+        quantity: 2,
+    };
+    total(man);
+
+    let bmw = {
+        make: "BMW",
+        cost: 600,
+        quantity: 1,
+    };
+    total(bmw);
+
+    let opel = {
+        make: "Opel",
+        cost: 200,
+        quantity: 3,
+    };
+    total(opel);
+
+    let totalSum = 0;
+    for (let i = 0; i < totalPrise.length; i++) {
+        totalSum += totalPrise[i];
+    }
+    alert(totalSum);
+
+</script>
